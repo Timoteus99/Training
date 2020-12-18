@@ -32,8 +32,8 @@ def check_temperature():
 def send_telegram_alarm(bot_message):
     #function to send bot message via telegram
     
-    bot_token = '1461320034:AAHEGk-pBFw53gfJSW852VD4MUyG_6rdfpY'
-    bot_chatID = '1490237517'
+    bot_token = ''
+    bot_chatID = ''
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
 
     response = requests.get(send_text)
